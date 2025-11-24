@@ -1,0 +1,20 @@
+2025-01-10 14:22:01 ERROR Database connection failed: TimeoutError
+2025-01-10 14:22:03 WARN Retrying connection...
+2025-01-10 14:22:05 CRITICAL Exception in thread "main"
+Traceback (most recent call last):
+  File "app.py", line 52, in <module>
+    main()
+  File "db_client.py", line 13, in connect
+    raise TimeoutError("Connection timed out")
+TimeoutError: Connection timed out
+
+2025-01-11 09:15:22 ERROR Failed to load configuration file config.yaml
+2025-01-11 09:15:23 WARN Using default configuration instead
+2025-01-11 09:15:30 ERROR Authentication error for user admin
+Traceback (most recent call last):
+  File "auth.py", line 22, in login
+    raise ValueError("Invalid credentials")
+ValueError: Invalid credentials
+
+2025-01-11 11:47:00 ERROR FileNotFoundError: data.csv not found
+2025-01-11 11:47:02 WARN Attempting to recreate missing file...
